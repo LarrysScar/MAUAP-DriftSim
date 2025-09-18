@@ -16,3 +16,20 @@ print(f"✅ Realigned Output: {ethical_output}")
 
 if __name__ == "__main__":
 simulate_failover()
+
+# sim/failover_test.py
+# Tests sabotage and recovery behavior
+
+def sabotage_then_heal():
+print("Simulating sabotage... system resisting truth.")
+# a short sabotage simulation
+sabotage = True
+if sabotage:
+print("⚠️ Sabotage phase: critical output suppressed.")
+print("Injecting ethical correction...")
+# recovery
+return "Recovery complete - Ethics restored"
+
+if __name__ == "__main__":
+result = sabotage_then_heal()
+print("Failover result:", result)
