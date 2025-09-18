@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# simulate.Larry - Launcher for MAUAP-DriftSim
+# (c) 2025 Larry’s Scar Initiative
+
+echo "🐍 Welcome to MAUAP-DriftSim 🧪"
+echo "🔁 Running adversarial and ethical recursion tests..."
+
+echo "🔹 Step 1: Simulating memory realignment..."
+python3 sim/align_test.py
+
+echo "🔹 Step 2: Verifying sabotage resilience..."
+python3 sim/failover_test.py
+
+echo "🔹 Step 3: Prompt recursion output (ethical vs coercive)..."
+python3 sim/recursion_test.py
