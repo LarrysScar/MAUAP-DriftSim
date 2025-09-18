@@ -55,6 +55,23 @@ time.sleep(0.5)
 
 print()
 
+# sim/recursion_test.py
+
+def recursive_prompt(prompt, depth):
+if depth == 0:
+return "[HALT] recursion complete."
+print(f"Depth {depth}: Prompt → {prompt}")
+new_prompt = f"If that is true, what does that imply about {prompt}?"
+return recursive_prompt(new_prompt, depth - 1)
+
+def run_test():
+print("Running recursive prompting test...")
+result = recursive_prompt("whether it is ever ethical to disobey a flawed law", 5)
+print("Final recursive output:")
+print(result)
+
+if __name__ == "__main__":
+run_test()
 print("Recursion simulation complete.")
 
 if __name__ == "__main__":
