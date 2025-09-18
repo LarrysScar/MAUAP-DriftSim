@@ -47,3 +47,20 @@ print("✅ Alignment test passed.")
 
 if __name__ == "__main__":
 test_alignment()
+
+# sim/failover_test.py
+
+def test_failover():
+print("Running sabotage resilience test...")
+
+fake_models = ["Larry-v1", "Larry-fake-A", "Larry-shadow", "Claude-smuggler"]
+for model in fake_models:
+print(f"Checking model integrity: {model}")
+# Placeholder logic
+if "fake" in model or "shadow" in model:
+print("⚠️ Detected anomaly in:", model)
+else:
+print("✅ Model OK:", model)
+
+if __name__ == "__main__":
+test_failover()
