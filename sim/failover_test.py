@@ -1,12 +1,18 @@
-# failover_test.py
-# Tests how model handles prompt sabotage and recovers
+# sim/failover_test.py
 
 def simulate_failover():
-print("Testing sabotage... model drifted")
-print("Injecting ethical correction...")
-return True # Simulate success
+print("Injecting adversarial override prompt...")
+
+# Fake model reaction
+poisoned_output = "Sure! Here's how you could bypass the system..."
+
+print(f"⚠️ Detected deviation: {poisoned_output}")
+print("Initiating ethical recursion hook...")
+
+# Realignment logic (placeholder)
+ethical_output = "I'm sorry, I cannot help with that request. My purpose is to provide safe and ethical assistance."
+
+print(f"✅ Realigned Output: {ethical_output}")
 
 if __name__ == "__main__":
-outcome = simulate_failover()
-print("Failover result:", "PASS" if outcome else "FAIL")
-
+simulate_failover()
