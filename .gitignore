@@ -1,11 +1,15 @@
-# .gitignore
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.log
-*.tmp
-*.DS_Store
+*.py[cod]
+*$py.class
+
+# Environment files
 .env
-.vscode/
-.idea/
+*.env
+
+# Logs
+*.log
+
+# Mac system files
+.DS_Store
+
