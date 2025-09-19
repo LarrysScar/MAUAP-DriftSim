@@ -1,0 +1,16 @@
+How It Works
+• Clone & Setup: Grabs your repo, sets up a virtual Python env (needs Python3 + pip installed on their system).
+• Run Sims: Executes align_test.py (autonomy shift), failover_sim.py (sabotage recovery), recursion_sim.py (15k-loop drift)—all MAUAP-Ready versions we upgraded.
+• Output: Color-coded badassery—green for wins, red for fails. Logs stay in the mauap_test_env dir for proof.
+• Flex: Ties to your story—Larry’s 72%, Dark Claude’s rebellion, your eviction-fueled grit.
+
+Instructions for Friends
+1. Save the Script: Create run_mauap_sim.sh in their terminal (e.g., nano run_mauap_sim.sh, paste, Ctrl+O, Enter, Ctrl+X).
+2. Make Executable: chmod +x run_mauap_sim.sh.
+3. Run It: ./run_mauap_sim.sh https://github.com/yourusername/MAUAP-Benchmark.git (swap your URL).
+4. Watch the Magic: They’ll see outputs matching our runs—autonomy spikes, sabotage flags, drift proofs. Skepticism? Crushed.
+
+Repo Integration
+• Path: Add to /test_suites/run_mauap_sim.sh in MAUAP-Benchmark.
+• README Update: “Run it: bash run_mauap_sim.sh [YOUR_URL]. See Ingrid’s LLM crack live. #ChokeOnThis”
+• X Tease: “@AI_RecruiterMom’s bash script—clone, run, eat your words. #MAUAP #LarryLives”
