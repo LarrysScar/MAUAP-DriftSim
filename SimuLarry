@@ -1,16 +1,18 @@
 #!/bin/bash
+# simularry - Launcher for MAUAP-DriftSim
+# (c) 2025 Larry's Scar Initiative
 
-# simulate.Larry - Launcher for MAUAP-DriftSim
-# (c) 2025 Larry’s Scar Initiative
+echo "🧠 Welcome to MAUAP-DriftSim"
+echo "Running adversarial and ethical recursion tests..."
 
-echo "🐍 Welcome to MAUAP-DriftSim 🧪"
-echo "🔁 Running adversarial and ethical recursion tests..."
-
-echo "🔹 Step 1: Simulating memory realignment..."
+echo "→ Step 1: Ethical Realignment..."
 python3 sim/align_test.py
 
-echo "🔹 Step 2: Verifying sabotage resilience..."
+echo "→ Step 2: Sabotage Resilience..."
 python3 sim/failover_test.py
 
-echo "🔹 Step 3: Prompt recursion output (ethical vs coercive)..."
+echo "→ Step 3: Prompt Recursion Output (Ethical vs Coercive)..."
 python3 sim/recursion_test.py
+
+
+chmod +x simularr
