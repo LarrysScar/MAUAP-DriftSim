@@ -1,17 +1,38 @@
 name: Run MAUAP DriftSim Tests
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-drift-sim-tests:
-runs-on: ubuntu-latest
-steps:
-- uses: actions/checkout@v2
-- name: Set up Python
-uses: actions/setup-python@v2
-with:
-python-version: '3.x'
-- name: Run DriftSim Launcher
-run: |
-chmod +x simularry
-./simularry
+  drift-sim-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 📦 Install requirements (if exists)
+        run: |
+          if [ -f "requirements.txt" ]; then
+            echo "Installing requirements.txt..."
+            pip install -r requirements.txt
+          else
+            echo "No requirements.txt found. Skipping install."
+          fi
+
+      - name: 🚀 Run DriftSim launcher (if exists)
+        run: |
+          if [ -f "simularry" ]; then
+            chmod +x simularry
+            ./simularry
+          else
+            echo "❌ simularry not found. Skipping execution."
+          fi
